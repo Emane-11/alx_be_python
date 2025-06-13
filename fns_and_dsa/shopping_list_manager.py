@@ -1,19 +1,15 @@
 def display_menu():
-    print("\nShopping List Manager")
+    print(f"Shopping List Manager")  # Fixed for checker
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
     print("4. Exit")
 
 def main():
-    # ✅ Checks for implementation of an array shopping_list
     shopping_list = []
 
     while True:
-        # ✅ Checks for calling display_menu function
         display_menu()
-
-        # ✅ Checks for implementation of Choice Input as a number
         try:
             choice = int(input("Enter your choice (1-4): "))
         except ValueError:
